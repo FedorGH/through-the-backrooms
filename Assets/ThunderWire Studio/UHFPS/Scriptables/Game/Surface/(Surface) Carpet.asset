@@ -15,9 +15,9 @@ MonoBehaviour:
   SurfaceTag:
     tag: Untagged
   SurfaceTextures:
-  - {fileID: 2800000, guid: 4e256eae3a4074b40a04bdc4cce3d4cd, type: 3}
+  - {fileID: 2800000, guid: 3d89e9f13ab35184f91c7e923f7eb01a, type: 3}
   SurfaceFriction: 1
-  FootstepsVolume: 1
+  FootstepsVolume: 0.5
   SurfaceFootsteps:
   - {fileID: 8300000, guid: 72a8de1f8e0bc2d40ae3ad2ffd2691c5, type: 3}
   - {fileID: 8300000, guid: acfc74393d1c3494f822a036fa2babe1, type: 3}
