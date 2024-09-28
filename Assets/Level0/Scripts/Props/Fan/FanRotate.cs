@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class FanRotate : MonoBehaviour
 {
     // Скорость вращения
     public float rotationSpeed = 50f;
