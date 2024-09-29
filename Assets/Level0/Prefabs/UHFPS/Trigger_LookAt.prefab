@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8222379732119634301
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7248437714166615649}
+  - component: {fileID: 6184469405482074822}
+  - component: {fileID: 1059944307720305418}
+  m_Layer: 0
+  m_Name: Trigger_LookAt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &7248437714166615649
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8222379732119634301}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 31.899998, y: 2, z: 25.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6184469405482074822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8222379732119634301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45df30382c8585a41b534c5f0f78982a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  JumpscareType: 0
+  DirectType: 1
+  TriggerType: 0
+  JumpscareImage: {fileID: 21300000, guid: e9c60dc9b64e7fa42b7c0057dd2dba8d, type: 3}
+  JumpscareModelID: scare_zombie
+  JumpscareSound:
+    audioClip: {fileID: 8300000, guid: 796b3c022654c0946aba9ae2fb514525, type: 3}
+    volume: 1
+  Animator: {fileID: 0}
+  AnimatorStateName: Jumpscare
+  AnimatorTrigger: Jumpscare
+  InfluenceFear: 1
+  TentaclesIntensity: 0.5
+  TentaclesSpeed: 2
+  VignetteStrength: 0.2
+  LookAtJumpscare: 0
+  LookAtTarget: {fileID: 0}
+  LookAtDuration: 0
+  LockPlayer: 0
+  EndJumpscareWithEvent: 0
+  InfluenceWobble: 1
+  WobbleAmplitudeGain: 0.65
+  WobbleFrequencyGain: 15
+  WobbleDuration: 1
+  DirectDuration: 1
+  FearDuration: 5
+  TriggerEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  TriggerExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnJumpscareStarted:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnJumpscareEnded:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1059944307720305418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8222379732119634301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39c86548e94bdc84f83fcb9137a7596e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TriggerType: 0
+  CullMask:
+    serializedVersion: 2
+    m_Bits: 0
+  ViewportOffset: {x: 0.75, y: 0.75}
+  LookAwayViewport: 0
+  UseDistance: 0
+  CallEventOutsideDistance: 0
+  VisualizeDistance: 0
+  TriggerDistance: 5
+  OnLookAt:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6184469405482074822}
+        m_TargetAssemblyTypeName: UHFPS.Runtime.JumpscareTrigger, Assembly-CSharp
+        m_MethodName: TriggerJumpscare
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnLookAway:
+    m_PersistentCalls:
+      m_Calls: []
