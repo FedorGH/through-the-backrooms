@@ -1,7 +1,7 @@
 {
   "brightness": 0.0,
   "fov": 60,
-  "sensitivity": 1.0,
+  "sensitivity": 0.7,
   "smoothing": false,
   "smoothing_speed": 1.0,
   "show_fps": true,
@@ -15,7 +15,7 @@
   "antialiasing_quality": 2,
   "anisotropic": 2,
   "texture_quality": 3,
-  "shadow_distance": 6,
+  "shadow_distance": 3,
   "fog_quality": 2,
   "pp_bloom": true,
   "pp_vignette": true,
