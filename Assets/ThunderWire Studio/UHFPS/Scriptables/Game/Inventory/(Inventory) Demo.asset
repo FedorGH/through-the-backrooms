@@ -772,7 +772,8 @@ MonoBehaviour:
       Icon: {fileID: 21300000, guid: cbc3de1cb9e937749926fc4135d0d565, type: 3}
       ItemObject:
         GUID: d1967a3246bd9e047b17fb288b68cccf
-        Object: {fileID: 3497057729131411850, guid: d1967a3246bd9e047b17fb288b68cccf, type: 3}
+        Object: {fileID: 3497057729131411850, guid: d1967a3246bd9e047b17fb288b68cccf,
+          type: 3}
       Settings:
         isUsable: 0
         isStackable: 1
@@ -960,11 +961,10 @@ MonoBehaviour:
       LocalizationSettings:
         titleKey:
           GlocText: item.title.key01
-          NormalText: Key 01
+          NormalText: item.title.key01
         descriptionKey:
           GlocText: item.description.key01
-          NormalText: A generic, yet mysterious key with an unknown use. Keep it
-            on hand, as it may unlock doors, chests, or secrets yet to be discovered.
+          NormalText: item.description.key01
     - GUID: 12bb84ecda3946579a8db52385d1f86b
       SectionGUID: 9ce7786df37c4160ae9a0542acd94613
       Title: Key 02
@@ -1289,8 +1289,10 @@ MonoBehaviour:
           NormalText: VHS Cassette
         descriptionKey:
           GlocText: item.description.vhscassette
-          NormalText: A classic, durable format for video recording and archiving
-            memories or documenting important events.
+          NormalText: 'Name: {name}
+
+            A classic, durable format for video
+            recording and archiving memories or documenting important events.'
     - GUID: 21cc6375d5614192aac1fedce6147cfa
       SectionGUID: be7f17ba3cb145e6883bea6a70f0deb7
       Title: Red Keycard
@@ -1383,7 +1385,8 @@ MonoBehaviour:
       Icon: {fileID: 21300000, guid: 06efbcfe479b7c947addcab06f055d24, type: 3}
       ItemObject:
         GUID: 6c3b42d9375604c4dbd796f63544133e
-        Object: {fileID: 7243635044483938932, guid: 6c3b42d9375604c4dbd796f63544133e, type: 3}
+        Object: {fileID: 7243635044483938932, guid: 6c3b42d9375604c4dbd796f63544133e,
+          type: 3}
       Settings:
         isUsable: 0
         isStackable: 0
