@@ -111,7 +111,7 @@ MonoBehaviour:
   - stateAsset: {fileID: -3091074795513825643}
     isEnabled: 1
   - stateAsset: {fileID: -5966767257484766718}
-    isEnabled: 1
+    isEnabled: 0
   - stateAsset: {fileID: 5317404476196027615}
     isEnabled: 1
   - stateAsset: {fileID: -7187678247991363468}
